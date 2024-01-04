@@ -11,6 +11,8 @@ import { KeyvaluePipeComponent } from '../components/keyvalue-pipe/keyvalue-pipe
 import { DatePipeComponent } from '../components/date-pipe/date-pipe.component';
 import path from 'path';
 import { DecimalPipeComponent } from '../components/decimal-pipe/decimal-pipe.component';
+import { AsyncPipeComponent } from '../components/async-pipe/async-pipe.component';
+import { CustomPipeComponent } from '../components/custom-pipe/custom-pipe.component';
 
 export const routes: Routes = [
     {path:"json-pipe",component:JsonPipeComponent},
@@ -22,5 +24,7 @@ export const routes: Routes = [
     {path:"percent-pipe", component:PercentPipeComponent},
     {path:"keyvalue-pipe", component:KeyvaluePipeComponent},
     {path:"date-pipe",component:DatePipeComponent},
-    {path:"decimal-pipe",component:DecimalPipeComponent}
+    {path:"decimal-pipe",component:DecimalPipeComponent},
+    {path:"async-pipe",component:AsyncPipeComponent},
+    {path:"custom-pipe",component:CustomPipeComponent}
 ];

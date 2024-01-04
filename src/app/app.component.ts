@@ -10,7 +10,7 @@ import { CurrencyPipeComponent } from '../components/currency-pipe/currency-pipe
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [CommonModule, RouterOutlet, RouterLink, CurrencyPipeComponent, UppercasePipeComponent]
+    imports: [CommonModule, RouterOutlet, RouterLink]
 })
 export class AppComponent {
   title = 'AngularDefaultPipes';
