@@ -1,2 +1,24 @@
 <p> {{ product.price | currency}} </p>
 
+<div>
+    <!--output '$0.26'-->
+    <p>A: {{product.price | currency}}</p>
+
+    <!--output 'CA$0.26'-->
+    <p>A: {{product.price | currency:'CAD'}}</p>
+
+    <!--output 'CAD0.26'-->
+    <p>A: {{product.price | currency:'CAD':'code'}}</p>
+
+    <!--output 'CA$0,001.35'-->
+    <p>B: {{product.price | currency:'CAD':'symbol':'4.2-2'}}</p>
+
+    <!--output '$0,001.35'-->
+    <p>B: {{product.price | currency:'CAD':'symbol-narrow':'4.2-2'}}</p>
+
+    <!--output '0 001,35 CA$'-->
+    <p>B: {{product.price | currency:'CAD':'symbol':'4.2-2'}}</p>
+
+    <!--output 'CLP1' because CLP has no cents-->
+    <p>B: {{product.price | currency:'CLP'}}</p>
+  </div>

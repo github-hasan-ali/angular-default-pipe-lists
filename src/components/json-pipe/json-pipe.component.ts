@@ -15,6 +15,7 @@ export class JsonPipeComponent{
   person1:Person={firstName:"Tayyip", lastName:"Kilic", age:26}
   person2:Person={firstName:"Recep", lastName:"Karabacak", age:20}
   person3:Person={firstName:"Hasan", lastName:"Kart", age:36}
+  person4:Person={firstName:"Emre", lastName:"Avcu", age:23}
 
   
   constructor(){}
