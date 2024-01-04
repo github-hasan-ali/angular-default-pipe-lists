@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ValueEqualityFn } from '@angular/core';
+import { UpperValueExpression } from '../../models/uppercase-pipe';
 
 @Component({
   selector: 'app-uppercase-pipe',
@@ -9,5 +10,7 @@ import { Component } from '@angular/core';
   styleUrl: './uppercase-pipe.component.scss'
 })
 export class UppercasePipeComponent {
-
+    value:UpperValueExpression={
+        value:"hasan"
+    }
 }
