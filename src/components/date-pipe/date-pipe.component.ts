@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './date-pipe.component.scss'
 })
 export class DatePipeComponent {
-// Get the current date and time as a date-time value.
   today: number = Date.now();
 }
 

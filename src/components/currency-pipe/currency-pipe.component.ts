@@ -15,22 +15,6 @@ export class CurrencyPipeComponent{
  product:Product={
   
 price:1.3495
-
-
-
-
-  
-
  }
- 
-
-
   constructor() { }
-
-  
-    
-
-
-   
-
 }
