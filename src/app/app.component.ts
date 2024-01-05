@@ -3,7 +3,18 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { CurrencyPipeComponent } from '../components/currency-pipe/currency-pipe.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import localeTr from '@angular/common/locales/tr'; // Türkçe dil dosyası
+import localeEn from '@angular/common/locales/en'; // İngilizce dil dosyası
 
+
+registerLocaleData(localeTr, 'tr');
+// İngilizce dil ayarları
+registerLocaleData(localeEn, 'en');registerLocaleData(localeTr, 'tr');
+// İngilizce dil ayarları
+registerLocaleData(localeEn, 'en');
 
 @Component({
     selector: 'app-root',
@@ -15,4 +26,5 @@ import { CurrencyPipeComponent } from '../components/currency-pipe/currency-pipe
 export class AppComponent {
   title = 'AngularDefaultPipes';
 }
+
 

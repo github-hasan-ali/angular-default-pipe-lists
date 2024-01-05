@@ -4,6 +4,12 @@
     <!--output '$0.26'-->
     <p>A: {{product.price | currency}}</p>
 
+    <!-- Örnek kullanım -->
+    <p>B:{{ product.price| currency:'₺':'symbol':'1.2-2' }}</p>
+
+    <!-- Örnek kullanım -->
+    <p>B:{{ product.price| currency:'TRY':'symbol':'1.2-2' }}</p>
+
     <!--output 'CA$0.26'-->
     <p>A: {{product.price | currency:'CAD'}}</p>
 

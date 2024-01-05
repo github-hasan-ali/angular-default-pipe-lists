@@ -9,10 +9,12 @@ import { SlicePipeComponent } from '../components/slice-pipe/slice-pipe.componen
 import { PercentPipeComponent } from '../components/percent-pipe/percent-pipe.component';
 import { KeyvaluePipeComponent } from '../components/keyvalue-pipe/keyvalue-pipe.component';
 import { DatePipeComponent } from '../components/date-pipe/date-pipe.component';
-import path from 'path';
 import { DecimalPipeComponent } from '../components/decimal-pipe/decimal-pipe.component';
 import { AsyncPipeComponent } from '../components/async-pipe/async-pipe.component';
 import { CustomPipeComponent } from '../components/custom-pipe/custom-pipe.component';
+import { I18nPluralPipeComponent } from '../components/i18n-plural-pipe/i18n-plural-pipe.component';
+import { I18nSelectPipeComponent } from '../components/i18n-select-pipe/i18n-select-pipe.component';
+
 
 export const routes: Routes = [
     {path:"json-pipe",component:JsonPipeComponent},
@@ -26,5 +28,7 @@ export const routes: Routes = [
     {path:"date-pipe",component:DatePipeComponent},
     {path:"decimal-pipe",component:DecimalPipeComponent},
     {path:"async-pipe",component:AsyncPipeComponent},
-    {path:"custom-pipe",component:CustomPipeComponent}
+    {path:"custom-pipe",component:CustomPipeComponent},
+    {path:"i18nplural-pipe",component:I18nPluralPipeComponent},
+    {path:"i18nselect-pipe",component:I18nSelectPipeComponent}
 ];
